@@ -10,14 +10,7 @@ from tensorflow.keras.models import load_model
 
 
 
-import streamlit as st
 
-st.set_page_config(
-    page_title="Face Mask Detection",
-    page_icon="😷",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 
 st.markdown(""" <style>
@@ -60,8 +53,38 @@ if not os.path.exists(MODEL_PATH):
 
 model = load_model(MODEL_PATH)
 
-
 st.title("😷 Face Mask Detection")
+
+
+
+st.sidebar.markdown(""" 
+            <h1  style="color:#062136;" > <u>About </u></h1>""",unsafe_allow_html=True)
+
+st.sidebar.divider()
+
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF; margin-bottom:10px; padding:0px;">🧠 Model : CNN</h5>""",unsafe_allow_html=True)
+
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF; margin-bottom:10px; padding:0px;">📂 Dataset : Face Mask Dataset</h5>""",unsafe_allow_html=True)
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF; margin-bottom:10px; padding:0px;">📌 Classes : <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   • Mask <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    • No Mask
+            </h5>""",unsafe_allow_html=True)
+
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF; margin-bottom:10px; padding:0px;">🖼️ Image Size : 128 x 128</h5>""",unsafe_allow_html=True)
+
+
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF; margin-bottom:10px; padding:0px;">⚙️ Framework : TensorFlow</h5>""",unsafe_allow_html=True)
+
+
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF;   padding:0px;">🎯 Accuracy : 91%</h5>""",unsafe_allow_html=True)
+st.sidebar.divider()
+st.sidebar.markdown(""" <h3 style="color:#062136; margin-bottom:5px;">Developed by :</h3>""",unsafe_allow_html=True)
+st.sidebar.markdown(""" <h5 style="color:#FFFFFF; padding:0px;">&nbsp;&nbsp;&nbsp;Vishakha Nikam </h5>""",unsafe_allow_html=True)
+
+
+
+
+
 st.divider()
 
 st.markdown(""" 
@@ -203,16 +226,8 @@ st.divider()
 st.markdown(
     """
     <div style="text-align:center; color:#897094; font-size:17px;">
-        Developed using TensorFlow, Keras and Streamlit <br>
-        <u>Developed by </u><br>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-st.markdown(
-    """
-    <div style="text-align:center; color:#897094; font-size:12px;">
-        Vishakha Nikam
+        Developed using TensorFlow, Keras and Streamlit 
+        
     </div>
     """,
     unsafe_allow_html=True
