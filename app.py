@@ -67,7 +67,7 @@ st.title("😷 Face Mask Detection")
 
 
 st.sidebar.markdown(""" 
-            <h1  style="color:#062136;" > <u>About </u></h1>""",unsafe_allow_html=True)
+            <h1  style="color:#D9ADED;" > <u>About </u></h1>""",unsafe_allow_html=True)
 
 st.sidebar.divider()
 
@@ -87,7 +87,7 @@ st.sidebar.markdown(""" <h5 style="color:#FFFFFF; margin-bottom:10px; padding:0p
 
 st.sidebar.markdown(""" <h5 style="color:#FFFFFF;   padding:0px;">🎯 Accuracy : 91%</h5>""",unsafe_allow_html=True)
 st.sidebar.divider()
-st.sidebar.markdown(""" <h3 style="color:#062136; margin-bottom:5px;">Developed by :</h3>""",unsafe_allow_html=True)
+st.sidebar.markdown(""" <h3 style="color:#D9ADED; margin-bottom:5px;">Developed by :</h3>""",unsafe_allow_html=True)
 st.sidebar.markdown(""" <h5 style="color:#FFFFFF; padding:0px;">&nbsp;&nbsp;&nbsp;Vishakha Nikam </h5>""",unsafe_allow_html=True)
 
 
