@@ -9,6 +9,17 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
 
+
+import streamlit as st
+
+st.set_page_config(
+    page_title="Face Mask Detection",
+    page_icon="😷",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+
 st.markdown(""" <style>
         .stApp{
         background: linear-gradient(to top, #D9ADED, #FFFFFF);
