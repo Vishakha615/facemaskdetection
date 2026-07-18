@@ -10,6 +10,13 @@ from tensorflow.keras.models import load_model
 
 
 
+st.markdown("""
+<style>
+[data-testid="stSidebar"] {
+    background-color: #4B215E;
+    color:white;
+            
+}       
 
 
 
